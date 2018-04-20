@@ -1,0 +1,19 @@
+{
+  "name": "Ethiopian Construction Directory",
+  "app_id": "ndk.micheal.ecd",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
+}
