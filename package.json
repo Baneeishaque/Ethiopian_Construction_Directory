@@ -1,7 +1,7 @@
 {
-  "name": "EBD",
+  "name": "Ethiopian_Construction_Directory",
   "version": "0.0.1",
-  "description": "An Ionic project",
+  "description": "Ethiopian_Construction_Directory",
   "devDependencies": {
     "gulp": "^3.5.6",
     "gulp-clean-css": "^3.7.0",
