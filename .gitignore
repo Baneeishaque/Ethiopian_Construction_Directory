@@ -29,6 +29,8 @@ plugins/android.json
 plugins/ios.json
 $RECYCLE.BIN/
 
+www/lib/
+
 *.DS_Store
 *.log
 *.swp
