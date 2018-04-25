@@ -25,3 +25,8 @@ gulp.task('sass', function(done) {
 gulp.task('watch', ['sass'], function() {
   gulp.watch(paths.sass, ['sass']);
 });
+
+gulp.task('ionic:build:before', function () {
+  gulp.src('./resources/release-signing.properties')
+      .pipe(gulp.dest('./platforms/android/'));
+});
