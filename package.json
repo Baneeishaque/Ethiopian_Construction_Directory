@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Ethiopian_Construction_Directory",
   "devDependencies": {
+    "bower": "^1.8.4",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
     "gulp-clean-css": "^3.9.3",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1"
@@ -14,7 +17,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "android"
@@ -23,6 +27,7 @@
   "dependencies": {
     "cordova-android": "7.1.0",
     "cordova-plugin-device": "^2.0.2",
+	"cordova-plugin-inappbrowser": "^3.0.0",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",

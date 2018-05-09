@@ -1,0 +1,29 @@
+<ion-view view-title="Timber &amp; Eucalyptus">
+  <div class="bar bar-subheader 
+  item-input-inset bar-light">
+  <label class="item-input-wrapper">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" ng-model="query" placeholder="Search">
+  </label>
+</div>
+<ion-content 
+class="has-subheader">
+<ion-refresher on-refresh="doRefresh()">
+</ion-refresher>
+<ion-list ng-repeat="item in artists | filter: query">
+  
+  <ion-item>
+    
+    
+    <p style="position:absolute;right:10px;">
+      <a  ng-click="showProductInfo(item.COMPANY,item.TELEPHONE,item.PRODUCT,item.MOBILE,item.FAX,item.POST,item.EMAIL,item.WEBSITE)" class="button  button-balanced button-clear   icon ion-more"> </a> 
+    </p>
+    
+    <h2  ng-click="showProductInfo(item.COMPANY,item.TELEPHONE,item.PRODUCT,item.MOBILE,item.FAX,item.POST,item.EMAIL,item.WEBSITE)" > {{item.COMPANY}} </h2>
+  
+  </ion-item>
+  
+  
+</ion-list>
+</ion-content>
+</ion-view>

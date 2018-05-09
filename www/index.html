@@ -53,7 +53,7 @@
     
     <script src="js/directives.js"></script>
     <script src="js/services.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <script src="js/lodash.min.js"></script>
     <script src="js/angular-simple-logger.js"></script>
     <script src="js/angular-google-maps.min.js"></script>
     <script src="js/googlemaps.init.js"></script>
@@ -70,41 +70,48 @@
       <ion-nav-bar class="bar-energized">
         <ion-nav-back-button></ion-nav-back-button>
         <ion-nav-buttons side="left">
-          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"><i class="icon ion-ios-home"></i></button>
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
         </ion-nav-buttons>
       </ion-nav-bar>
       <ion-nav-view></ion-nav-view>
     </ion-side-menu-content>
     <ion-side-menu side="left" id="side-menu21">
       <ion-content ng-controller="menuCtrl" padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
-        <div class="spacer" data-componentid="spacer2" style="width: 268px; height: 29px;"></div>
-        <div class="spacer" data-componentid="spacer1" style="width: 268px; height: 0px;"></div>
+        <div class="spacer" data-componentid="spacer2" style="width: 268px; height: 10px;"></div>
+       
         <div class="profile-image" data-componentid="image5">
           <a style="display:block;" ui-sref="ethiopianConstractionDirectories()" menu-close="">
             <img src="img/tQx10DtQqNkTcDqcTrZQ_DirectoryLogo.JPG" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
           </a>
         </div>
-        <div class="spacer" data-componentid="spacer10" style="width: 268px; height: 18px;"></div>
-        <h4 id="menu-heading3" style="color:#FAFAFA;font-weight:600;text-align:center;" data-componentid="heading3">ETHIOPIAN CONSTRUCTION DIRECTORY</h4>
+        <div class="spacer" data-componentid="spacer10" style="width: 268px; height: 10px;"></div>
+        <h4 id="menu-heading3" style="color:white;font-weight:600;text-align:center;" data-componentid="heading3"><b>ETHIOPIAN CONSTRUCTION DIRECTORY</b></h4>
         <br>
        
         
         <ion-list id="menu-list1" data-componentid="list1">
-          <ion-item class="item-icon-left dark side-menu-item" id="menu-list-item1" ui-sref="ethiopianConstractionDirectories()" menu-close="" data-componentid="list-item1">
-            <i class="icon ion-ios-home"></i><b>Home</b></ion-item>
-          <ion-item class="item-icon-left dark side-menu-item" id="menu-list-item2" ui-sref="about()" menu-close="" data-componentid="list-item2">
-            <i class="icon ion-android-bulb"></i><b>About</b></ion-item>
-          <ion-item class="item-icon-left dark side-menu-item" id="menu-list-item3" ui-sref="contact()" menu-close="" data-componentid="list-item3">
+          <ion-item style="color:#4B4A4A;" class="item-icon-left dark side-menu-item" id="menu-list-item1" ui-sref="ethiopianConstractionDirectories()" menu-close="" data-componentid="list-item1">
+            <i  class="icon ion-ios-home"></i><b>Home</b></ion-item>
+             <ion-item style="color:#4B4A4A;" class="item-icon-left dark side-menu-item" id="menu-list-item4" ui-sref="categoryINDEX()" menu-close="" data-componentid="list-item4">
+            <i class="icon ion-ios-copy"></i><b>Category</b></ion-item>
+          <ion-item style="color:#4B4A4A;" class="item-icon-left dark side-menu-item" id="menu-list-item2" ui-sref="about()" menu-close="" data-componentid="list-item2">
+            <i class="icon ion-ios-people"></i><b>About</b></ion-item>
+          <ion-item style="color:#4B4A4A;" class="item-icon-left dark side-menu-item" id="menu-list-item3" ui-sref="contact()" menu-close="" data-componentid="list-item3">
             <i class="icon ion-android-phone-portrait"></i><b>Contact</b></ion-item>
-          <ion-item class="item-icon-left dark side-menu-item" id="menu-list-item4" ui-sref="categoryINDEX()" menu-close="" data-componentid="list-item4">
-            <i class="icon ion-help-buoy"></i><b>Category</b></ion-item>
+         
         </ion-list>
-        <div class="spacer" data-componentid="spacer12" style="width: 248px; height: 106px;"></div>
+        <div class="spacer" data-componentid="spacer12" style="width: 48px; height: 20px;"></div>
+
         <div id="menu-markdown3" style="text-align:center;" class="show-list-numbers-and-dots" data-componentid="markdown3">
           <br><br>
-          <p style="color:#4B4A4A;font-size:9px;">Copy Right 2018
+          <p style="color:#4B4A4A;font-size:9px;">© 2018
             <strong>BLUE CAMP Media &amp; Entertainment PLC</strong>
+            <br>
+            <strong>App Dev. By <a href="#" onclick="window.open('http://www.primetechplc.com/', '_system', 'location=yes');" >PrimeSoftware</a></strong>
+
           </p>
+          </p>
+          
         </div>
       </ion-content>
     </ion-side-menu>

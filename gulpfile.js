@@ -2,6 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
+var bower = require('bower');
+var del = require('del');
+var gulp_bower = require('gulp-bower');
 
 var paths = {
   sass: ['./scss/**/*.scss']
@@ -27,6 +30,16 @@ gulp.task('watch', ['sass'], function() {
 });
 
 gulp.task('ionic:build:before', function () {
-  gulp.src('./resources/release-signing.properties')
-      .pipe(gulp.dest('./platforms/android/'));
+  bower_reinstall();
+  console.log(gulp.src('./resources/release-signing.properties').pipe(gulp.dest('./platforms/android/')));
 });
+
+gulp.task('ionic:watch:before', function () {
+  bower_reinstall();
+});
+
+var bower_reinstall=function() {
+  // console.log("Bower Libraries Directory : "+bower.config.cwd + "/" + bower.config.directory);  
+  del(bower.config.cwd + "/" + bower.config.directory+'/**', {force:true});
+  gulp_bower().pipe(gulp.dest(bower.config.cwd + "/" + bower.config.directory));
+}
