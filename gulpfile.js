@@ -30,12 +30,12 @@ gulp.task('watch', ['sass'], function() {
 });
 
 gulp.task('ionic:build:before', function () {
-  bower_reinstall();
-  console.log(gulp.src('./resources/release-signing.properties').pipe(gulp.dest('./platforms/android/')));
+  // bower_reinstall();
+  gulp.src('./resources/release-signing.properties').pipe(gulp.dest('./platforms/android/'));
 });
 
 gulp.task('ionic:watch:before', function () {
-  bower_reinstall();
+  // bower_reinstall();
 });
 
 var bower_reinstall=function() {
